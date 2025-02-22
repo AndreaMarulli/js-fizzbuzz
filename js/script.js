@@ -3,9 +3,13 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz. 
  
 for ( let i = 0; i <= 100; i++) {
-    let fizzBuzz 
-    if (i % 3 === 0) {
-        fizzBuzz = "fizz"; 
-    }
-      console.log(i, fizzBuzz);
-    }
+    let fizzBuzz = i
+    if (i % 3 === 0 && i % 5 === 0) {
+        fizzBuzz = "fizzBuzz"; 
+    } else if (i % 3 ===0) {
+        fizzBuzz = "fizz";
+    } else if (i % 5 ===0) {
+        fizzBuzz = "buzz";
+    } 
+    console.log(fizzBuzz);
+}
